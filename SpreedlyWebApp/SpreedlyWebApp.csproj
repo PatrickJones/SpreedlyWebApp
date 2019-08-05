@@ -125,6 +125,22 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spreedly\AppEnums.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyTransactionRequest.cs" />
+    <Compile Include="Spreedly\SpreedlyParseStringConverter.cs" />
+    <Compile Include="Spreedly\SpreedlyConverter.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyApiUrl.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyData.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyExtraStuff.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyGatewaySpecificResponseFields.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyMetadata.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyPaymentMethod.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyResponse.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyShippingAddress.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyTransaction.cs" />
+    <Compile Include="Spreedly\SpreedlyModels\SpreedlyTransactionResponse.cs" />
+    <Compile Include="Spreedly\SpreedlyPaymentProcessor.cs" />
+    <Compile Include="Spreedly\SpreedlySerialize.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />

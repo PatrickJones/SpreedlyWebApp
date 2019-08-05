@@ -1,6 +1,9 @@
-﻿using System;
+﻿using SpreedlyWebApp.Spreedly;
+using SpreedlyWebApp.Spreedly.SpreedlyModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -13,9 +16,13 @@ namespace SpreedlyWebApp.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public async Task<ActionResult> About()
         {
             ViewBag.Message = "Your application description page.";
+
+            var sp = new SpreedlyPaymentProcessor();
+            await sp.SendTransaction(new SpreedlyTransactionRequest { Amount = 300, CurrencyCode = "USD", RetainOnSuccess = true, PaymentMethodToken = "XZ1f00uScJYvGLI8L8HIxtZQlki" });
+
 
             return View();
         }
